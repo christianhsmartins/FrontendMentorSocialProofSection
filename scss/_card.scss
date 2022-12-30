@@ -1,0 +1,77 @@
+.card {
+    @include flex(column, flex-start, space-between);
+    width: 35rem;
+    height: 23.4rem;
+    padding: 4rem 3.2rem;
+    border-radius: 8px;
+    background: $primary;
+
+    .user {
+        @include flex(row, center, flex-start);
+        width: 100%;
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50px;
+            margin-right: 2.4rem;
+        }
+
+        .info {
+            h3 {
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 1.7rem;
+                letter-spacing: -0.025em;
+                color: $white;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 1.7rem;
+                letter-spacing: -0.025em;
+                margin-top: .2rem;
+                color: $secondary;
+            }
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 127.5%;
+        letter-spacing: -0.01em;
+        color: $white;
+    }
+}
+
+.review-card {
+    @include flex(row, center, flex-start);
+    width: 44.3rem;
+    height: 5.4rem;
+    padding: .8rem 3.2rem;
+    border-radius: 8px;
+    background: $grayish-magenta;
+
+    .stars {
+        @include flex(row, center, flex-start);
+        width: 100%;
+        max-width: 11.7rem;
+        margin-right: 2.4rem;
+
+        img {
+            &:not(:first-child) {
+                margin-left: .8rem;
+            }
+        }
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.7rem;
+        letter-spacing: -0.03em;
+        color: $primary;
+    }
+}
