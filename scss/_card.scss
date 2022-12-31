@@ -1,6 +1,7 @@
 .card {
     @include flex(column, flex-start, space-between);
-    width: 35rem;
+    width: 100%;
+    max-width: 35rem;
     height: 23.4rem;
     padding: 4rem 3.2rem;
     border-radius: 8px;
